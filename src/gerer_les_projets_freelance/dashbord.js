@@ -69,8 +69,8 @@ function Dashbord(){
                          
 
                 </div>
-                 <img id="bg" src="/images_projets_freelance/bg_person.png"></img>
-                 <img id="hello" src="/images_projets_freelance/morrning.png" ></img>
+                 <img id="bg" src={process.env.PUBLIC_URL +"/images_projets_freelance/bg_person.png"}></img>
+                 <img id="hello" src={process.env.PUBLIC_URL +"/images_projets_freelance/morrning.png"} ></img>
             </div>
             <div className="statistiques">
 
@@ -89,7 +89,7 @@ function Dashbord(){
                         <div className="chiffres">
                             <h2 id="st1">{terminer} <span>DH</span></h2>
                             <span id="tot">revenu Total</span>
-                            <img id="stat_icon" src="/images_projets_freelance/stat.png"></img>
+                            <img id="stat_icon" src={process.env.PUBLIC_URL +"/images_projets_freelance/stat.png"}></img>
                         </div>
 
                     </div>
@@ -107,7 +107,7 @@ function Dashbord(){
                         <div className="chiffres">
                             <h2 id="st2">{bd_encour} <span>DH</span></h2>
                             <span id="tot">en cours + en attente</span>
-                            <img id="stat_icon" src="/images_projets_freelance/stat.png"></img>
+                            <img id="stat_icon" src={process.env.PUBLIC_URL +"/images_projets_freelance/stat.png"}></img>
                         </div>
 
                     </div>
@@ -125,7 +125,7 @@ function Dashbord(){
                         <div className="chiffres">
                             <h2 id="st3">{encour} </h2>
                             <span id="tot">en cours actuellement</span>
-                            <img id="stat_icon" src="/images_projets_freelance/stat.png"></img>
+                            <img id="stat_icon" src={process.env.PUBLIC_URL +"/images_projets_freelance/stat.png"}></img>
                         </div>
 
                     </div>
@@ -142,7 +142,7 @@ function Dashbord(){
                         <div className="chiffres">
                             <h2 id="st4">{taux} <span>%</span></h2>
                             <span id="tot">Projets réussis</span>
-                            <img id="stat_icon" src="/images_projets_freelance/stat.png"></img>
+                            <img id="stat_icon" src={process.env.PUBLIC_URL +"/images_projets_freelance/stat.png"}></img>
                         </div>
 
                     </div>

@@ -8,7 +8,7 @@ import Modifier from "./modifier"
 function App_fr(){
 
     return(
-        <BrowserRouter>
+       
         <Routes>
             <Route path="/" element={<Home_pr_fr/>}></Route>
             <Route path="/dash" element={<Dashbord/>}></Route>
@@ -21,7 +21,7 @@ function App_fr(){
 
         </Routes>
         
-        </BrowserRouter>
+        
     )
 
 }export default App_fr

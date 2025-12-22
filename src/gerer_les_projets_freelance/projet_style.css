@@ -1508,7 +1508,7 @@ bottom: 0px;
 }
 #navv{
     height: 40px;
-    position: absolute;
+    position: fixed;
     z-index: 5000;
     top: 25px;
     left: 10px;

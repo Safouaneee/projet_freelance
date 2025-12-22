@@ -4,7 +4,7 @@ function Home_pr_fr(){
 
     return(
         <div>
-        <img id="navv" src="/images_projets_freelance/freelance_logo.png"></img>
+        <img id="navv" src={process.env.PUBLIC_URL +"/images_projets_freelance/freelance_logo.png"}></img>
             <nav className="navbar"id="nav">
 
         <h2>Freelance </h2>

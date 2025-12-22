@@ -4,7 +4,7 @@ export default function Menu_fr(){
     return(
         <nav className="menu">
             <div className="logo">
-                <img src="/images_projets_freelance/freelance_logo.png"></img>
+                <img src={process.env.PUBLIC_URL +"/images_projets_freelance/freelance_logo.png"}></img>
                 <h1>Freelance</h1>
             </div>
             <div className="links">

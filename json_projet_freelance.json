@@ -1,0 +1,154 @@
+{
+  "projets": [
+    {
+      "id": "1",
+      "nom": "Ahmed",
+      "titre": "Site e-commerce",
+      "budget": "32500",
+      "deadline": "2025-05-10",
+      "status": "terminer",
+      "priorite": "moyenne",
+      "description": "Boutique en ligne pour vetements"
+    },
+    {
+      "id": "2",
+      "nom": "Sara",
+      "titre": "Application mobile",
+      "budget": "60000",
+      "deadline": "2026-01-20",
+      "status": "en cour",
+      "priorite": "haute",
+      "description": "Application mobile de reservation"
+    },
+    {
+      "id": "3",
+      "nom": "Omar",
+      "titre": "Site immobilier",
+      "budget": "40000",
+      "deadline": "2025-09-15",
+      "status": "en attente",
+      "priorite": "basse",
+      "description": "Plateforme d annonces immobilieres"
+    },
+    {
+      "id": "4",
+      "nom": "Khadija",
+      "titre": "Systeme de facturation",
+      "budget": "28000",
+      "deadline": "2025-11-30",
+      "status": "annuler",
+      "priorite": "urgente",
+      "description": "Systeme simple de gestion des factures"
+    },
+    {
+      "id": "5",
+      "nom": "Rachid",
+      "titre": "Portfolio personnel",
+      "budget": "8000",
+      "deadline": "2025-03-25",
+      "status": "terminer",
+      "priorite": "basse",
+      "description": "Site portfolio pour developpeur"
+    },
+    {
+      "id": "6",
+      "nom": "Imane",
+      "titre": "Plateforme e-learning",
+      "budget": "75000",
+      "deadline": "2026-06-01",
+      "status": "en cour",
+      "priorite": "urgente",
+      "description": "Plateforme de cours en ligne"
+    },
+    {
+      "id": "7",
+      "nom": "Hamza",
+      "titre": "Blog technologique",
+      "budget": "9000",
+      "deadline": "2025-06-18",
+      "status": "terminer",
+      "priorite": "basse",
+      "description": "Blog sur les nouveautes tech"
+    },
+    {
+      "id": "8",
+      "nom": "Nadia",
+      "titre": "Site restaurant",
+      "budget": "15000",
+      "deadline": "2025-08-05",
+      "status": "en cour",
+      "priorite": "moyenne",
+      "description": "Site vitrine pour restaurant"
+    },
+    {
+      "id": "9",
+      "nom": "Hassan",
+      "titre": "Application RH",
+      "budget": "52000",
+      "deadline": "2026-02-12",
+      "status": "en attente",
+      "priorite": "haute",
+      "description": "Gestion des ressources humaines"
+    },
+    {
+      "id": "10",
+      "nom": "Fatima",
+      "titre": "Site voyage",
+      "budget": "34000",
+      "deadline": "2025-12-08",
+      "status": "devis",
+      "priorite": "moyenne",
+      "description": "Plateforme de reservation voyages"
+    },
+    {
+      "id": "11",
+      "nom": "Adil",
+      "titre": "Site salle de sport",
+      "budget": "18000",
+      "deadline": "2025-10-22",
+      "status": "en attente",
+      "priorite": "moyenne",
+      "description": "Site vitrine pour salle de fitness"
+    },
+    {
+      "id": "12",
+      "nom": "Meryem",
+      "titre": "Gestion stock",
+      "budget": "45000",
+      "deadline": "2026-07-14",
+      "status": "en cour",
+      "priorite": "haute",
+      "description": "Application de gestion de stock"
+    },
+    {
+      "id": "13",
+      "nom": "Ayoub",
+      "titre": "CRM entreprise",
+      "budget": "68000",
+      "deadline": "2026-09-30",
+      "status": "en cour",
+      "priorite": "urgente",
+      "description": "Systeme de gestion clients"
+    },
+    {
+      "id": "14",
+      "nom": "Salma",
+      "titre": "Marketplace artisanat",
+      "budget": "57000",
+      "deadline": "2027-04-17",
+      "status": "devis",
+      "priorite": "haute",
+      "description": "Marketplace de produits artisanaux marocains"
+    },
+    {
+      "id": "15",
+      "nom": "Younes",
+      "titre": "Dashboard entreprise",
+      "budget": "49000",
+      "deadline": "2026-12-01",
+      "status": "en cour",
+      "priorite": "moyenne",
+      "description": "Dashboard de suivi des performances"
+    }
+  ]
+}

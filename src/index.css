@@ -1,0 +1,529 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.box {
+  margin: 30px auto;
+  width: 500px;
+  box-shadow: 2px 2px 20px 1px gray;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(66, 146, 177);
+
+}
+
+.box h1 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.box span {
+  color: red;
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  min-height: 100vh;
+}
+
+.containerr {
+  min-height: 100%;
+
+}
+
+
+nav {
+  height: 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  margin-left: 13px;
+  color: orange;
+}
+
+.buttons {
+  margin-right: 15px;
+
+}
+
+.btn1 {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin-right: 5px;
+}
+
+.btn2 {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid white;
+  background-color: orange;
+  color: black;
+  margin-right: 5px;
+}
+
+.content {
+  display: flex;
+}
+
+.slide {
+  width: 200px;
+  margin-left: 70px;
+  border: 1px solid gray;
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.li {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.li p {
+  margin-bottom: 15px;
+}
+
+.ligne {
+  height: 1px;
+  width: 130px;
+  background-color: gray;
+  margin: 5px 0;
+
+}
+
+.box1 {
+  margin-left: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 20px;
+  margin-right: 20px;
+  width: 800px;
+
+
+
+}
+
+.bx {
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 10px;
+}
+
+.box1 h1 {
+  text-align: center;
+  margin: 15px;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+}
+
+span {
+  font-weight: bolder;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+ 
+}
+
+
+.form{
+    width: 600px;
+    padding: 20px;
+    background-color: azure;
+    
+}
+span{
+  font-weight: 200;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.tb{
+  width: 500px;
+}
+
+
+.todolist{
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+
+}
+.lignee{
+  margin-top: 10px;
+  height: 3px;
+  background-color: blueviolet;
+}
+.todolist label{
+  margin-top: 20px;
+  width: 100%;
+
+}
+.todolist select{
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  padding: 4px;
+
+}
+.ligne2{
+   margin: 30px 0;
+  height: 1px;
+  background-color: rgba(120,120,120,0.2);
+}
+.todo{
+  width: 100%;
+  height: fit-content;
+  background-color:#f3f4f6 ;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(120,120,120,0.2);
+  position: relative;
+  margin: 10px;
+}
+.todo input{
+  scale: 1.5;
+}
+.todo span{
+  color: blueviolet;
+  font-weight: 500;
+}
+.todo p{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.todo h6{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 11px;
+  background-color: rgba(138,43,226,0.2);
+  padding: 5px;
+  border-radius: 20px;
+  width: 45px;
+  text-align: center;
+} 
+.todo input{
+  border-radius: 50%;
+}
+
+
+#eye{
+  border-bottom: none;
+  color: blue;
+  text-decoration: none;
+}
+#btn_dl{
+  border: none;
+  background: none;
+}
+#delete{
+  color: red;
+}
+
+
+
+.nav_dtudent{
+  background-color: rgb(3, 4, 94);
+}
+.nav_dtudent h2{
+  color: white;
+  margin-left:20px ;
+}
+.nav_dtudent h2 i{
+  margin-right: 19px;
+}
+.bt1{
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  color: rgb(3, 4, 94);
+  border-radius: 8px;
+  margin-right: 6px;
+}
+.bt2{
+  padding: 5px;
+  width: 90px;
+  border: none;
+  background-color: rgb(255, 127, 80);
+  color: rgb(3, 4, 94);
+  border-radius: 8px;
+  margin-right: 15px;
+  height: 40px;
+
+}
+
+.h1_st{
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+  height: 80px;
+  margin: 50px 40px;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+.h1_st i{
+  margin: 10px;
+}
+.tb_st {
+  width: 95%;
+  margin: 0 40px;
+}
+.tb_st th{
+  height: 60px;
+  background-color:  rgb(3, 4, 94);
+  padding: 15px;
+  color: white;
+
+}
+.tb_st th:nth-child(1){
+  border-top-left-radius:10px ;
+}
+.tb_st th:nth-child(5){
+  border-top-right-radius:10px ;
+}
+.tb_st td{
+   height: 60px;
+  background-color:  white;
+  padding: 15px;
+  color: black;
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.tb_st td:nth-child(1){
+ 
+  font-weight: bolder;
+
+}
+.tb_st td:nth-child(4){
+ 
+  padding-left: 15px;
+  
+
+}
+
+.tb_st td:nth-child(5) i{
+  margin: 5px;
+  
+}
+.statestiques{
+  width: 100%;
+  margin: 30px 40px;
+  padding: 15px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+}
+.statestiques h2 i{
+  margin-right: 10px;
+  color: rgb(3, 4, 94) ;
+}
+.statestiques h2{
+  margin-bottom: 20px;
+}
+.statestiques h1 p{
+  font-size: 1rem;
+  color:gray ;
+}
+.statestiques h1{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  color: rgb(3, 4, 94);
+  
+}
+.statestiques h3{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  color: rgb(0, 0, 0);
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.1);
+  
+}
+.statestiques h3 span{
+  position: absolute;
+  right: 25px;
+  font-size: 1.3rem;
+  color: rgb(3, 4, 94);
+  font-weight: 600;
+}
+.form_etd h1{
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+  height: 80px;
+  margin: 50px 140px;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+.form_etd form{
+  width: 82%;
+  margin: 0 140px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.form_etd label{
+  width: 100%;
+  margin-bottom: 5px;
+}
+.form_etd input{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 10px;
+  margin-bottom: 15px;
+
+}
+#sub{
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(3, 4, 94);
+  color: white;
+}
+#rt_etd{
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  background: none;
+  border: none;
+  color: rgb(3, 4, 94);
+  font-size: 1.2rem;
+}
+#rt_etd i{
+  margin-right: 5px;
+}
+
+.carte_etd{
+  margin: 0 100px;
+  width: 90%;
+  background-color: white;
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.carte_etd h1{
+  height: 30%;
+  background-color: rgb(3, 4, 94);
+  color: white;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-left: 40px;
+
+}
+.carte_etd h1 i{
+  margin-right: 15px;
+}
+.carte_etd2{
+  padding: 40px;
+}
+.nm_pr{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+  
+}
+.fil_moy{
+  display: flex;
+   gap: 25px;
+  margin-bottom: 20px;
+}
+
+.nm_pr h2{
+  background-color: rgb(245, 245, 245);
+  padding: 15px;
+  width: 50%;
+  border-radius: 10px;
+}
+.nm_pr h2 p{
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.fil_moy h2{
+  background-color: rgb(245, 245, 245);
+  padding: 15px;
+  width: 50%;
+  border-radius: 10px;
+}
+.fil_moy h2 p{
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 5px;
+}
+#res{
+   background-color: rgb(245, 245, 245);
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+#res span{
+  font-size: 2rem;
+  font-weight: 700;
+  color:rgb(255, 127, 80) ;
+}
+
+

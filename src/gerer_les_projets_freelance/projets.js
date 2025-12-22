@@ -17,7 +17,7 @@ function Projets(){
     
     useEffect(()=>{
         
-        axios.get("http://localhost:4900/projets")
+        axios.get("https://6949a6871282f890d2d6b289.mockapi.io/projets")
         .then((res)=>{
             dispatcher(setProjects(res.data))
             setfilter(res.data)
@@ -107,7 +107,7 @@ function Projets(){
 )]
 
    function supprimmer(id){
-        axios.delete(`http://localhost:4900/projets/${id}`)
+        axios.delete(`https://6949a6871282f890d2d6b289.mockapi.io/projets/${id}`)
             .then(() => {
             const newList = projets.filter(elm => elm.id !== id)
             dispatcher(setProjects(newList))
@@ -167,7 +167,7 @@ const [idToDelete, setIdToDelete] = useState(null)
             dispatcher(setProjects(updatedProjets_st));
             setfilter(updatedProjets_st); 
 
-            axios.put(`http://localhost:4900/projets/${id}`, { ...updatedProjets_st.find(p => p.id === id) })
+            axios.put(`https://6949a6871282f890d2d6b289.mockapi.io/projets/${id}`, { ...updatedProjets_st.find(p => p.id === id) })
                 .catch(err => console.log(err));
     }
 
@@ -179,7 +179,7 @@ const [idToDelete, setIdToDelete] = useState(null)
             dispatcher(setProjects(updatedProjets_pr));
             setfilter(updatedProjets_pr); 
 
-            axios.put(`http://localhost:4900/projets/${id}`,{ ...updatedProjets_pr.find(p => p.id === id) })
+            axios.put(`https://6949a6871282f890d2d6b289.mockapi.io/projets/${id}`,{ ...updatedProjets_pr.find(p => p.id === id) })
                 .catch(err => console.log(err));
     }
 

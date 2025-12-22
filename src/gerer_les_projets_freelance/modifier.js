@@ -25,7 +25,7 @@ function Modifier() {
     const [erreurDescription, setErreurDescription] = useState("");
 
     useEffect(() => {
-        axios.get(`http://localhost:4900/projets/${id}`)
+        axios.get(`https://6949a6871282f890d2d6b289.mockapi.io/projets/${id}`)
             .then(res => setForm(res.data))
             .catch(err => console.log(err));
     }, [id]);
@@ -63,7 +63,7 @@ function Modifier() {
 
         if (!valid) return;
 
-        axios.put(`http://localhost:4900/projets/${id}`, form)
+        axios.put(`https://6949a6871282f890d2d6b289.mockapi.io/projets/${id}`, form)
             .then(() => navigate("/projets"))
             .catch(err => console.log(err));
     }

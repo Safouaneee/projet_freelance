@@ -120,6 +120,7 @@ function Form_pr_fr(){
 
 
             }
+           
           axios.post("https://6949a6871282f890d2d6b289.mockapi.io/projets", newProjet)
                 .then(res => {
                 dispatcher(setProjects([...projets, res.data]))

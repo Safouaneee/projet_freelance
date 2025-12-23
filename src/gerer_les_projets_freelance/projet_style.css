@@ -218,7 +218,7 @@ bottom: 0px;
 .statistiques{
     display: flex;
     
-    margin-left: 100px;
+    margin: 0 120px;
 }
 .bd_encours{
     background-color: #7FD1C8;
@@ -1517,4 +1517,1092 @@ bottom: 0px;
 #actions{
     width: 130px;
     translate: 20px 0;
+}
+/* =============================================
+   RESPONSIVE DESIGN - AJOUTS ET MODIFICATIONS
+   ============================================= */
+
+/* ----- ÉCRANS EXTRA LARGES (Desktop > 1920px) ----- */
+@media (min-width: 1920px) {
+  .dash {
+    width: 70%;
+    max-width: 1600px;
+  }
+  
+  .statistiques {
+    margin: 0 auto;
+    max-width: 1600px;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 5rem;
+  }
+}
+
+/* ----- ÉCRANS LARGES (Desktop 1440px - 1920px) ----- */
+@media (max-width: 1440px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .statistiques {
+    margin: 0 80px;
+  }
+  
+  #hello {
+    height: 280px;
+    right: 200px;
+  }
+  
+  #bg {
+    height: 180px;
+    right: 150px;
+  }
+}
+
+/* ----- ÉCRANS MOYENS (Laptop 1024px - 1440px) ----- */
+@media (max-width: 1200px) {
+  .dash {
+    width: 85%;
+    height: auto;
+    padding: 30px 20px;
+  }
+  
+  #hello {
+    height: 240px;
+    right: 150px;
+  }
+  
+  #bg {
+    height: 160px;
+    right: 100px;
+  }
+  
+  .statistiques {
+    margin: 0 40px;
+    gap: 20px;
+  }
+  
+  .projets_terminer,
+  .bd_encours,
+  .actifs,
+  .taux_rs {
+    width: 280px;
+    height: 230px;
+    padding: 18px;
+  }
+  
+  #stat_icon {
+    height: 100px;
+    bottom: 30px;
+  }
+  
+  .table_projets {
+    width: 95%;
+    font-size: 0.95rem;
+  }
+  
+  .table_projets td,
+  .table_projets th {
+    padding: 15px 10px;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ----- TABLETTES (768px - 1024px) ----- */
+@media (max-width: 1024px) {
+  /* Navigation */
+  .menu {
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .links {
+    gap: 15px;
+  }
+  
+  .links button {
+    width: 90px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+  
+  /* Dashboard */
+  .dash {
+    width: 90%;
+    margin-top: 120px;
+    height: auto;
+    min-height: 250px;
+  }
+  
+  #hello {
+    height: 200px;
+    right: 100px;
+  }
+  
+  #bg {
+    height: 140px;
+    right: 70px;
+  }
+  
+  .morrning h1 {
+    font-size: 1.8rem;
+  }
+  
+  .morrning p {
+    font-size: 0.95rem;
+  }
+  
+  /* Statistiques */
+  .statistiques {
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: center;
+  }
+  
+  .projets_terminer,
+  .bd_encours,
+  .actifs,
+  .taux_rs {
+    width: 45%;
+    min-width: 280px;
+    margin: 20px 10px;
+  }
+  
+  /* Table projets */
+  .add_projet {
+    margin: 0 40px;
+  }
+  
+  .card_filter {
+    margin: 30px 40px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+  }
+  
+  #length_pr {
+    position: static;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .table_projets {
+    overflow-x: auto;
+    display: block;
+  }
+  
+  .table_projets thead,
+  .table_projets tbody,
+  .table_projets tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  #desc {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Formulaires */
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-wrapper {
+    padding: 2.5rem;
+  }
+  
+  /* Hero */
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ----- TABLETTES PORTRAIT (600px - 768px) ----- */
+@media (max-width: 768px) {
+  /* Navigation */
+  .navbar {
+    padding: 1rem 3%;
+  }
+  
+  .navbar h2 {
+    font-size: 1.3rem;
+  }
+  
+  .btn-nav {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  
+  .menu {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .logo {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Dashboard */
+  .dash {
+    width: 95%;
+    margin-top: 180px;
+    padding: 20px;
+  }
+  
+  #hello,
+  #bg {
+    display: none;
+  }
+  
+  .morrning {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .morrning h1 {
+    font-size: 1.5rem;
+  }
+  
+  .morrning button {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* Statistiques */
+  .statistiques {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .projets_terminer,
+  .bd_encours,
+  .actifs,
+  .taux_rs {
+    width: 90%;
+    max-width: 400px;
+    margin: 15px auto;
+  }
+  
+  /* Projets */
+  .add_projet {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    gap: 20px;
+  }
+  
+  .add_projet h1 {
+    margin-top: 180px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .nv {
+    margin-top: 0;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .card_filter {
+    margin: 20px 15px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .card_filter select {
+    width: 100%;
+  }
+  
+  .svg {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Table responsive */
+  .table_projets {
+    margin: 20px 10px;
+    width: 95%;
+    font-size: 0.85rem;
+  }
+  
+  .table_projets thead {
+    display: none;
+  }
+  
+  .table_projets tbody,
+  .table_projets tr,
+  .table_projets td {
+    display: block;
+    width: 100%;
+  }
+  
+  #body_tr {
+    margin-bottom: 20px;
+    border: 2px solid rgba(147, 51, 234, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  #body_tr td {
+    padding: 10px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: left;
+    position: relative;
+    padding-left: 45%;
+  }
+  
+  #body_tr td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #9333ea;
+  }
+  
+  #body_tr td:first-child::before {
+    content: "Client: ";
+  }
+  
+  #body_tr td:nth-child(2)::before {
+    content: "Projet: ";
+  }
+  
+  #body_tr td:nth-child(3)::before {
+    content: "Budget: ";
+  }
+  
+  #body_tr td:nth-child(4)::before {
+    content: "Deadline: ";
+  }
+  
+  #body_tr td:nth-child(5)::before {
+    content: "Statut: ";
+  }
+  
+  #body_tr td:nth-child(6)::before {
+    content: "Priorité: ";
+  }
+  
+  #body_tr td:nth-child(7)::before {
+    content: "Description: ";
+  }
+  
+  #body_tr td:nth-child(8)::before {
+    content: "Actions: ";
+  }
+  
+  #desc {
+    max-width: 100%;
+    white-space: normal;
+  }
+  
+  #actions {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    translate: 0;
+  }
+  
+  /* Liste projets dashboard */
+  #list_prog {
+    width: 95%;
+    margin-left: 10px;
+    overflow-x: auto;
+  }
+  
+  .progress_projects {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .progress_projects button {
+    margin-right: 0;
+  }
+  
+  /* Formulaires */
+  .form-container {
+    padding: 1rem;
+  }
+  
+  .form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  /* Home page */
+  .hero {
+    padding: 6rem 3% 3rem;
+    min-height: 80vh;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  /* Pagination */
+  .pagination {
+    gap: 6px;
+    padding: 15px 5px;
+  }
+  
+  .pagination button {
+    min-width: 40px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+/* ----- MOBILES LANDSCAPE (600px - 768px en paysage) ----- */
+@media (max-width: 768px) and (orientation: landscape) {
+  .dash {
+    margin-top: 100px;
+  }
+  
+  .statistiques {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .projets_terminer,
+  .bd_encours,
+  .actifs,
+  .taux_rs {
+    width: 45%;
+  }
+}
+
+/* ----- MOBILES (480px - 600px) ----- */
+@media (max-width: 600px) {
+  /* Navigation */
+  .navbar h2,
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+  
+  .btn-nav {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  #navv {
+    height: 35px;
+    top: 20px;
+  }
+  
+  /* Dashboard */
+  .morrning h1 {
+    font-size: 1.3rem;
+  }
+  
+  .morrning p {
+    font-size: 0.9rem;
+  }
+  
+  .statistiques {
+    margin: 0 5px;
+  }
+  
+  .projets_terminer,
+  .bd_encours,
+  .actifs,
+  .taux_rs {
+    width: 95%;
+    height: auto;
+    min-height: 220px;
+  }
+  
+  .chiffres h2 {
+    font-size: 2rem;
+  }
+  
+  /* Projets */
+  .add_projet h1 {
+    font-size: 1.8rem;
+  }
+  
+  .card_filter {
+    margin: 15px 10px;
+    padding: 15px;
+  }
+  
+  .table_projets {
+    margin: 15px 5px;
+    width: 98%;
+  }
+  
+  /* Formulaires */
+  .form-wrapper {
+    padding: 1.5rem 1rem;
+  }
+  
+  .form-title {
+    font-size: 1.8rem;
+  }
+  
+  .form-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Home */
+  .hero {
+    padding: 5rem 2% 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-hero {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .features,
+  .team,
+  .cta {
+    padding: 4rem 3%;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .feature-card,
+  .team-card {
+    padding: 2rem;
+  }
+  
+  .cta-title {
+    font-size: 1.8rem;
+  }
+  
+  .btn-cta {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  /* Confirm dialog */
+  .confirm-box {
+    padding: 30px 20px;
+    width: 95%;
+  }
+  
+  .confirm-box p {
+    font-size: 16px;
+  }
+  
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .actions button {
+    width: 100%;
+  }
+}
+
+/* ----- PETITS MOBILES (< 480px) ----- */
+@media (max-width: 480px) {
+  /* Navigation */
+  .menu {
+    padding: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 1rem;
+  }
+  
+  .logo img {
+    height: 35px;
+  }
+  
+  .links button {
+    width: 80px;
+    height: 40px;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  
+  /* Dashboard */
+  .dash {
+    width: 98%;
+    margin-top: 160px;
+    padding: 15px;
+  }
+  
+  .morrning {
+    margin: 5px;
+  }
+  
+  .morrning h1 {
+    font-size: 1.2rem;
+  }
+  
+  .morrning p {
+    font-size: 0.85rem;
+  }
+  
+  .morrning button {
+    height: 35px;
+    font-size: 0.9rem;
+  }
+  
+  .statistiques {
+    margin: 0;
+  }
+  
+  .projets_terminer,
+  .bd_encours,
+  .actifs,
+  .taux_rs {
+    width: 98%;
+    margin: 10px 1%;
+    padding: 15px;
+    border-radius: 30px;
+  }
+  
+  .cercle {
+    padding: 8px;
+  }
+  
+  .cercle svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #rev_tot {
+    font-size: 0.9rem;
+  }
+  
+  .chiffres h2 {
+    font-size: 1.8rem;
+  }
+  
+  #stat_icon {
+    height: 80px;
+    bottom: 20px;
+  }
+  
+  /* Projets */
+  .add_projet {
+    margin: 0 10px;
+  }
+  
+  .add_projet h1 {
+    font-size: 1.5rem;
+    margin-top: 160px;
+  }
+  
+  .nv {
+    width: 100%;
+    font-size: 0.9rem;
+    height: 45px;
+  }
+  
+  .card_filter {
+    margin: 10px 5px;
+  }
+  
+  .svg {
+    padding: 8px;
+    height: 45px;
+  }
+  
+  .svg h6 {
+    font-size: 0.85rem;
+  }
+  
+  .card_filter select {
+    height: 45px;
+    font-size: 0.85rem;
+  }
+  
+  #length_pr {
+    font-size: 1.3rem;
+  }
+  
+  .table_projets {
+    font-size: 0.8rem;
+  }
+  
+  #body_tr {
+    padding: 10px;
+  }
+  
+  #body_tr td {
+    padding: 8px 5px;
+    padding-left: 40%;
+    font-size: 0.85rem;
+  }
+  
+  .status,
+  .priorite {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+  
+  .modifier,
+  .supprimer {
+    padding: 5px;
+  }
+  
+  .modifier svg,
+  .supprimer svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Liste projets dashboard */
+  .progress_projects {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  
+  .progress_projects h2 {
+    font-size: 1.3rem;
+  }
+  
+  .progress_projects button {
+    width: 80px;
+    height: 35px;
+    font-size: 0.85rem;
+  }
+  
+  #list_prog {
+    font-size: 0.8rem;
+  }
+  
+  #list_prog td,
+  #list_prog th {
+    padding: 10px 5px;
+  }
+  
+  /* Formulaires */
+  .form-container {
+    padding: 0.5rem;
+  }
+  
+  .form-wrapper {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .form-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .form-title {
+    font-size: 1.6rem;
+  }
+  
+  .form-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .form-label {
+    font-size: 0.85rem;
+  }
+  
+  .label-icon {
+    font-size: 1rem;
+  }
+  
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+  
+  .btn-icon {
+    font-size: 1rem;
+  }
+  
+  /* Home */
+  .navbar {
+    padding: 1rem 2%;
+  }
+  
+  .hero {
+    padding: 4rem 2% 2rem;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .btn-hero,
+  .btn-cta {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+    border-radius: 30px;
+  }
+  
+  .features,
+  .team,
+  .cta {
+    padding: 3rem 2%;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .features-grid {
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+  
+  .feature-title {
+    font-size: 1.2rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+  }
+  
+  .team-card {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .team-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+  
+  .team-name {
+    font-size: 1.3rem;
+  }
+  
+  .team-role {
+    font-size: 1rem;
+  }
+  
+  .cta-title {
+    font-size: 1.6rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Pagination */
+  .pagination button {
+    min-width: 35px;
+    height: 35px;
+    font-size: 13px;
+    padding: 0 8px;
+  }
+  
+  /* Confirm dialog */
+  .confirm-box {
+    padding: 25px 15px;
+  }
+  
+  .confirm-box p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .actions button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ----- TRÈS PETITS MOBILES (< 360px) ----- */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .add_projet h1 {
+    font-size: 1.3rem;
+  }
+  
+  .projets_terminer,
+  .bd_encours,
+  .actifs,
+  .taux_rs {
+    border-radius: 25px;
+  }
+  
+  .chiffres h2 {
+    font-size: 1.6rem;
+  }
+  
+  #body_tr td {
+    padding-left: 35%;
+  }
+  
+  .form-title {
+    font-size: 1.4rem;
+  }
+  
+  .pagination button {
+    min-width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+}
+
+/* ----- CORRECTIONS GÉNÉRALES ----- */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+/* Amélioration du scroll horizontal sur mobile */
+.table_projets {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Éviter le débordement */
+body {
+  overflow-x: hidden;
+}
+
+.containerr,
+.container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }

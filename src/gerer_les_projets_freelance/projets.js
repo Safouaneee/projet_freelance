@@ -32,6 +32,7 @@ function Projets(){
     const total_Encour = projets.filter(elm=>elm.status=="en cour").reduce((acc,val)=>acc+Number(val.budget),0)
     const total_Enattente=projets.filter(elm=>elm.status=="en attente").reduce((acc,val)=>acc+Number(val.budget),0)
 
+    
     const nbr_Encour=projets.filter(elm=>elm.status=="en cour").length
     const nbr_Eattente =projets.filter(elm=>elm.status=="en attente").length
     const nbr_devis = projets.filter(elm=>elm.status=="devis").length
@@ -64,7 +65,7 @@ function Projets(){
                     result = result.filter(p => p.status === statusValue);
                 }
                 if(prioriteValue && prioriteValue !== "tous les priorite") {
-                    result = result.filter(p => p.priorite === prioriteValue);
+                    result = result.filter(p => p.priorite === prioriteValue);//3awd dar 3la result filter
                 }
                 if(anneeValue && anneeValue !== "toutes les annees") {
                     result = result.filter(p => p.deadline.startsWith(anneeValue));
@@ -90,14 +91,13 @@ function Projets(){
             applyFilters(status,e.target.value,annee);
     }
       function handleFilterAnnee(e){
-            const value = e.target.value
-            setAnnee(value)
+            setAnnee(e.target.value)
 
-            if(value === "toutes les annees"){
+            if(e.target.value === "toutes les annees"){
                 setfilter(projets)
             }else{
                 setfilter(
-                projets.filter(p => p.deadline.startsWith(value))
+                projets.filter(p => p.deadline.startsWith(e.target.value))
                 )
             }
             applyFilters(status, priorite, e.target.value);
@@ -116,7 +116,7 @@ function Projets(){
             })
 }
  const [show, setShow] = useState(false);
-const [idToDelete, setIdToDelete] = useState(null)
+ const [idToDelete, setIdToDelete] = useState(null)
 
 
 
@@ -167,7 +167,7 @@ const [idToDelete, setIdToDelete] = useState(null)
             dispatcher(setProjects(updatedProjets_st));
             setfilter(updatedProjets_st); 
 
-            axios.put(`https://6949a6871282f890d2d6b289.mockapi.io/projets/${id}`, { ...updatedProjets_st.find(p => p.id === id) })
+            axios.put(`https://6949a6871282f890d2d6b289.mockapi.io/projets/${id}`, {...updatedProjets_st.find(p => p.id === id) })
                 .catch(err => console.log(err));
     }
 
@@ -184,7 +184,7 @@ const [idToDelete, setIdToDelete] = useState(null)
     }
 
     const [currentPage, setCurrentPage] = useState(1);
-    const projetsPerPage = 5;
+    const projetsPerPage = 4;
     const indexOfLastProjet = currentPage * projetsPerPage;
     const indexOfFirstProjet = indexOfLastProjet - projetsPerPage;
     const currentProjets = filter_projets.slice(indexOfFirstProjet, indexOfLastProjet);
@@ -281,7 +281,7 @@ const [idToDelete, setIdToDelete] = useState(null)
                                     <tr id="aucun">
                                       
 
-                                            <td colSpan="10" className="aucun-projet">
+                        <td colSpan="10" className="aucun-projet">
         Aucun projet trouvé
                           </td>
                                       
@@ -289,7 +289,7 @@ const [idToDelete, setIdToDelete] = useState(null)
                                     </tr>
                     ) :  
                      currentProjets.map((elm)=>(
-                        <tr id="body_tr">
+                        <tr key={elm.id} id="body_tr">
                             <td>{elm.nom}</td>
                             <td>{elm.titre}</td>
                             <td id="bud">{elm.budget} DH</td>
@@ -298,8 +298,8 @@ const [idToDelete, setIdToDelete] = useState(null)
                                   <span className={getSatusClass(elm.status)}>
                                     <select id="selc_change1" value={elm.status} onChange={(e)=>handleChangeStatus(elm.id,e.target.value)}>
                                         <option value={elm.status}>{elm.status}</option>
-                                        {array_status.filter(f=>f!==elm.status).map((elm_s)=>(
-                                                <option value={elm_s}>{elm_s}</option>
+                                        {array_status.filter(f=>f!==elm.status).map((elm_s,index)=>(
+                                                <option key={index} value={elm_s}>{elm_s}</option>
                                                
                                         ))}
                                     </select>
@@ -309,8 +309,8 @@ const [idToDelete, setIdToDelete] = useState(null)
                                 <span className={getprioriteClass(elm.priorite)}>
                                      <select id="selc_change2" value={elm.priorite} onChange={(e)=>handleChangepriorite(elm.id,e.target.value)}>
                                         <option value={elm.priorite}>{elm.priorite}</option>
-                                        {array_Priorite.filter(f=>f!==elm.priorite).map((elm_s)=>(
-                                                <option value={elm_s}>{elm_s}</option>
+                                        {array_Priorite.filter(f=>f!==elm.priorite).map((elm_s,index)=>(
+                                                <option key={index} value={elm_s}>{elm_s}</option>
                                                
                                         ))}
                                     </select>

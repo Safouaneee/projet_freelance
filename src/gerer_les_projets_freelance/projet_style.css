@@ -167,6 +167,7 @@ bottom: 0px;
     border-radius: 10px;
     width: 100px;
     height: 40px;
+    cursor: pointer;
 }
 .projets_terminer{
     background-color: #DCE8A3;
@@ -284,6 +285,8 @@ bottom: 0px;
     rgba(228, 73, 164, 1)
   );
   height: 40px;
+  cursor: pointer;
+
   color: white;
 }
 .progress_projects button:hover{
@@ -392,6 +395,7 @@ bottom: 0px;
     height: 50px;
     border-radius: 10px;
     background: none;
+    cursor: pointer;
 }
 .links a.active button{
     background-image: linear-gradient(
@@ -401,6 +405,7 @@ bottom: 0px;
     rgba(228, 73, 164, 1));
     color: white;
     border: none;
+    
     box-shadow: 3px 3px 30px rgba(174, 83, 237, 0.6);
 }
 .add_projet{
@@ -429,6 +434,7 @@ bottom: 0px;
   border-radius: 10px;
   width: 170px;
   height: 50px;
+  cursor: pointer;
 }
 .nv:hover{
   background: linear-gradient(to right, #ec4899, #9333ea);
@@ -541,13 +547,7 @@ bottom: 0px;
     translate: -10px 0;
 
 }
-#body_tr{
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    border-right: 1px solid rgba(0,0,0,0.1);
-    border-left: 1px solid rgba(0,0,0,0.1);
 
-
-}
 #body_tr td{
     padding: 20px;
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -558,6 +558,10 @@ bottom: 0px;
     background-color: rgba(128, 128, 128,0.2)
 ;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 #selc_change1 ,#selc_change2{
     background: none;
     border: none;
@@ -575,13 +579,19 @@ bottom: 0px;
     background: none;
     border: none;
     color: rgb(54, 52, 185);
+    margin-left: 10px;
+  cursor: pointer;
+
+    
 
 }
 .supprimer{
      background: none;
     border: none;
     color: red;
-    margin-left: 10px;
+    margin-left:10px ;
+  cursor: pointer;
+
     
 }
 #bud{
@@ -1186,10 +1196,9 @@ bottom: 0px;
             }
         }
         #aucun{
-            width: 100%;
+            width: 200px;
             height: 200px;
             text-align: center;
-            box-shadow: 3px 3px 30px rgba(0,0,0,0.1);
             border-radius: 20px;
             translate: 0 10px;
         }
@@ -1516,7 +1525,6 @@ bottom: 0px;
 }
 #actions{
     width: 130px;
-    translate: 20px 0;
 }
 /* =============================================
    RESPONSIVE DESIGN - AJOUTS ET MODIFICATIONS
@@ -1537,6 +1545,9 @@ bottom: 0px;
   
   .hero-title {
     font-size: 5rem;
+  }
+  .progress_projects button{
+    margin-right: 200px;
   }
 }
 
@@ -1559,6 +1570,7 @@ bottom: 0px;
     height: 180px;
     right: 150px;
   }
+ 
 }
 
 /* ----- ÉCRANS MOYENS (Laptop 1024px - 1440px) ----- */
@@ -1583,7 +1595,7 @@ bottom: 0px;
     margin: 0 40px;
     gap: 20px;
   }
-  
+
   .projets_terminer,
   .bd_encours,
   .actifs,
@@ -1623,6 +1635,7 @@ bottom: 0px;
   
   .logo h1 {
     font-size: 1.4rem;
+    
   }
   
   .logo img {
@@ -1745,6 +1758,8 @@ bottom: 0px;
   .team-grid {
     grid-template-columns: 1fr;
   }
+     
+  
 }
 
 /* ----- TABLETTES PORTRAIT (600px - 768px) ----- */
